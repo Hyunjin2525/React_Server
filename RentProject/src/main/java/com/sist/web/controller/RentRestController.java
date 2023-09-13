@@ -72,7 +72,7 @@ public class RentRestController {
 		vo.setTotalpage(totalpage);
 		
 		return vo;
-	} 
+	}  
 	
 	@GetMapping("rent_detail")
 	public RentEntity rent_detail(int rno)

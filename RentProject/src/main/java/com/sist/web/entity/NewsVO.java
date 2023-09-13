@@ -8,4 +8,4 @@ import lombok.Setter;
 public class NewsVO {
 	private String title,desc,pubdata,link;
 }
-  
+   
