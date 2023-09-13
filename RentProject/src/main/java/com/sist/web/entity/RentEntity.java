@@ -16,3 +16,4 @@ public class RentEntity {
 	private int rno;
 	private String image,car_name,car_type,maker,inwon,fuel,car_option,price;;
 }
+ 

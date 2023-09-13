@@ -128,6 +128,6 @@ public class NewsManager {
         } catch (IOException e) {
             throw new RuntimeException("API 응답을 읽는 데 실패했습니다.", e);
         }
-    }
+    } 
    
 }

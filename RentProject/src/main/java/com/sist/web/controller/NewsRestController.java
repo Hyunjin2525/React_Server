@@ -17,7 +17,7 @@ import com.sist.web.manager.NewsManager;
 public class NewsRestController {
 	@Autowired
 	private NewsManager mgr;
-	
+	 
 	@GetMapping("news_find_react")
 	public List<NewsVO> news_find(String fd)
 	{
