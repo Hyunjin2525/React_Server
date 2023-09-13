@@ -79,7 +79,9 @@ public class ShopRestController {
 	public ShopEntity shop_detail(String gno)
 	{
 		ShopEntity vo=dao.findByGno(Integer.parseInt(gno));
-		
+		vo.setHit(vo.getHit()+1);
+		dao.save(vo);
+		vo=dao.findByGno(Integer.parseInt(gno));
 		return vo;
 	}
 	

@@ -25,4 +25,6 @@ public interface RentDAO extends JpaRepository<RentEntity, Integer>{
 	@Query(value = "SELECT CEIL(COUNT(*)/16.0) FROM rent2 WHERE car_name LIKE CONCAT('%',:fd,'%')",nativeQuery = true)
 	public int rentTotal(String fd);
 	
+	public RentEntity findByRno(int rno);
+	
 }

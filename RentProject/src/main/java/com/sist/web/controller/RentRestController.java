@@ -73,4 +73,11 @@ public class RentRestController {
 		
 		return vo;
 	}
+	
+	@GetMapping("rent_detail")
+	public RentEntity rent_detail(int rno)
+	{
+		RentEntity vo=dao.findByRno(rno);
+		return vo;
+	}
 }
